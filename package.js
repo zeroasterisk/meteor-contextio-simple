@@ -1,6 +1,6 @@
 Package.describe({
     summary: "A super-lightweight toolkit to add support for Context.io to your Meteor App.",
-    version: "0.0.1",
+    version: "1.0.0",
     name: "zeroasterisk:contextio-simple",
     git: "https://github.com/zeroasterisk/meteor-contextio-simple.git"
 });

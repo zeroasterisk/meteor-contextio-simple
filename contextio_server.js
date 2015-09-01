@@ -77,15 +77,15 @@ Cio = {
     );
   },
   // https://context.io/docs/2.0/accounts/messages
+	// get all messages for a folder
   // TODO consider switching this to async ?
-  messagesSent: function(accountId, emailAccountLabel, cb) {
+  messagesInFolder: function(accountId, emailAccountLabel, folderName, cb) {
     //console.log(accountId, emailAccountLabel);
     return this.callAsyncOrSync(
       Cio.api
       .accounts(accountId)
       .sources(emailAccountLabel)
-      // TODO walk all folders, extract all sent folders
-      .folders('[Gmail]/Sent%20Mail')
+      .folders(folderName)
       .messages()
       .get,
       null,
