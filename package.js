@@ -6,7 +6,10 @@ Package.describe({
 });
 
 Npm.depends({
-    "contextio": "0.4.0"
+  // TEMP waiting on contextio to pull in PR
+  // https://github.com/contextio/ContextIO-node/pull/20
+  // "contextio": "0.4.0"
+  "contextio-temp": "0.4.0"
 });
 
 Package.onUse(function (api) {

@@ -1,5 +1,5 @@
 // https://github.com/contextio/ContextIO-node/blob/master/lib/ContextIO.js
-var ContextIO = Npm.require('contextio');
+var ContextIO = Npm.require('contextio-temp');
 
 Cio = {
   api: null,
